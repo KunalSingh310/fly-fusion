@@ -1,0 +1,490 @@
+
+
+nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease-in-out;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+#navbar-links{
+    transition: all 0.3s ease-in-out;
+}
+body {
+    padding-top: 64px;
+}
+ @media screen and (max-width:768px) {
+    #navbar-links {
+        display: none;
+    }
+    
+    #navbar-links.active {
+        display: block;
+    }
+    #hamburger-btn {
+        display: block;
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav a.text-xl{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000;
+    }
+} 
+
+#Search {
+    color: black;
+}
+
+input#Search{
+    transition: box-shadow 0.3s ease-in-out ;
+}
+input#Search:focus {
+    box-shadow: 0 0 10px rgba(59,130,246,0.7);
+}
+
+form input {
+    transition: box-shadow 0.3s ease-in-out transform 0.3s;
+
+}
+form input:focus{
+    box-shadow: 0 0 10px rgba(59,130,246,0.7);
+    transform:scale(1.02);
+}
+form button {
+    transition: transform 0.2s ease-in-out;
+}
+form button:hover {
+    transform: scale(1.05);
+}
+button .spinner {
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    animation: spin 0.6s linear infinite;
+}
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes fadeInFooter {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-footer {
+    animation: fadeInFooter 1.5s ease-in-out;
+}
+.social-icon {
+    transition: color 0.3s ease;
+}
+.social-icon:hover {
+    color:#1DA1f2;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-slideIn {
+    animation: slideIn 1s ease-out;
+}
+.footer{
+    background-color:#BEC6A0;
+}
+
+
+.background{
+  background-image: url(./images/Designer\ 2.jpeg);
+  height: 3000px;
+  
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 93%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px 10px;
+}
+
+
+a{
+  color: white;
+  
+}
+
+.cta-btn {
+    padding: 15px 25px;
+    background-color: #FF6F00;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    will-change: transform,background-color;
+}
+.cta-btn:hover{
+  background-color: #4d87bc;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  #destination-search {
+      width: 90%; /* Full width on mobile */
+  }
+}
+.search-bar {
+    text-align: center;
+    margin: 40px 0;
+
+}
+
+#destination-search {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10 px;
+    
+}
+
+.search-bar button {
+    padding: 12px 20px;
+   
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.featured-destinations,
+.tour-packages {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap:20px;
+    
+
+}
+
+.destination-card,
+.package-card {
+    text-align: center;
+    background-color: hsl(180, 100%, 97%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    margin:10px;
+    box-sizing: border-box;
+}
+
+.destination-card img,
+.package-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.destination-card h3,
+.package-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.destination-card p,
+.package-card p {
+    margin: 10px 0;
+    color: #555;
+}
+.deals-banner {
+
+  text-align: center;
+  padding: 30px;
+}
+.deals-banner button {
+ 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.img{
+  display: flex;
+  flex-direction:row;
+  gap: 20px;
+}
+img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  
+}
+.dubai, .asia{
+  flex: 1;
+  max-width: 500px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2, p{
+  margin: 10px 0;
+}
+ul{
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+form button:focus, .cta-btn:focus, .deals-banner button:focus {
+    outline: 3px solid #FF6F00;
+}
+#navbar-links.active {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+}
+/* Example media query */
+
+
+/* For medium screens (tablet size) */
+@media (max-width: 1024px) {
+  .destination-card,
+  .package-card {
+      width: 45%; /* Make each card take up half the space */
+  }
+}
+/* Base styles for heading and destination box */
+/* #hero-section h1 {
+  font-size: 2.5rem; 
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+#hero-section p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+} */
+
+.destination-box {
+  position: absolute; /* Default positioning */
+  bottom: 20px;
+  left: 20px;
+  margin: 0 auto;
+  width: 90%; 
+  max-width: 400px;
+  padding: 20px;
+ 
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+@media (min-width: 768px) {
+  .destination-box {
+    width: 70%; /* More space for larger screens */
+    padding: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .destination-box {
+    width: 50%; /* Even larger for desktops */
+    padding: 30px;
+  }
+}
+
+#hero-section {
+  display: flex;
+  flex-direction: column; /* Default for smaller screens */
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (min-width: 1024px) {
+  #hero-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left; /* For larger screens */
+  }
+}
+
+
+.destination-box input[type="text"],
+.destination-box input[type="date"],
+.destination-box button {
+  width: 100%; 
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .destination-box input[type="text"],
+  .destination-box input[type="date"],
+  .destination-box button {
+    width: calc(33.33% - 10px); /* Adjusted for medium screens */
+    flex: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .destination-box input[type="text"],
+  .destination-box input[type="date"],
+  .destination-box button {
+    width: calc(30% - 10px); /* Adjusted for larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-destinations,
+  .tour-packages {
+      flex-direction: column; /* Stack the cards vertically */
+      align-items: center;
+      gap: 20px; 
+  }
+  
+  .destination-card,
+  .package-card {
+      width: 80%; 
+  }
+}
+.destination-box input[type="text"],
+.destination-box input[type="date"],
+
+
+.destination-box button {
+  width: 100%; /* Full width for small screens */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.destination-box button:hover {
+  background-color: #f59e0b;
+}
+
+/* Media query for tablets (min-width: 640px) */
+@media (min-width: 640px) {
+  .destination-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 600px;
+  }
+
+  .destination-box input[type="text"],
+  .destination-box input[type="date"],
+  .destination-box button {
+    flex: 1 1 calc(33.33% - 10px); /* Elements take 1/3 of the width with space */
+    max-width: none;
+  }
+}
+
+/* Media query for desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .destination-box {
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .destination-box input[type="text"],
+  .destination-box input[type="date"],
+  .destination-box button {
+    flex: 1 1 calc(30% - 10px); /* Slightly smaller for better spacing */
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .destination-box {
+    width: 60%; /* Adjust for medium screens */
+    padding: 15px;
+  }
+}
+
+
+
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.animate-slideIn {
+  animation: slideIn 1s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
